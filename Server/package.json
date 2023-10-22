@@ -1,0 +1,44 @@
+{
+    "name": "nodejs_with_mosh",
+    "version": "1.0.0",
+    "description": "learning nodejs with course of mosh!!",
+    "main": "index.js",
+    "scripts": {
+        "start": "@powershell -Command $env:DEBUG='app:* db:*';nodemon --inspect ./src/server",
+        "authServer": "@powershell -Command $env:DEBUG='auth:*';nodemon --inspect ./src/authServer",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kairang/NodeJs_with_Mosh.git"
+    },
+    "keywords": [
+        "Nodejs",
+        "Mosh",
+        "Kairang"
+    ],
+    "author": "Kairang",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Kairang/NodeJs_with_Mosh/issues"
+    },
+    "homepage": "https://github.com/Kairang/NodeJs_with_Mosh#readme",
+    "dependencies": {
+        "bcrypt": "^5.1.0",
+        "config": "^3.3.9",
+        "cors": "^2.8.5",
+        "debug": "^4.3.4",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "helmet": "^6.1.5",
+        "jsonwebtoken": "^9.0.0",
+        "lodash": "^4.17.21",
+        "mongoose": "^7.0.5",
+        "pug": "^3.0.2",
+        "underscore": "^1.13.6"
+    },
+    "devDependencies": {
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.22"
+    }
+}

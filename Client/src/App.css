@@ -1,0 +1,14 @@
+.App {
+  min-height: 100vh;
+  /* background: lightskyblue; */
+}
+
+button:disabled {
+  cursor: no-drop;
+}
+
+.page-item,
+.list-group-item,
+.clickable {
+  cursor: pointer;
+}
